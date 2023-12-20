@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .winnerscups{
+    margin: 0 auto;
+    background: #8CC461;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.cup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.cup-container {
+    position: relative;
+}
+
+.cup {
+    width: 170px;
+    height: auto;
+    position: relative;
+   
+}
+
+.star {
+    position: absolute;
+    width: 20px;
+    height: auto;
+}
+
+.big-star {
+    width: 100px;
+
+}
+
+.median-big {
+    width: 80px;
+}
+
+.small-big {
+    width: 60px;
+}
+
+.small-star {
+    width: 28px;
+
+}
+
+.star1 {
+    top: 5%;
+    left: -78%;
+}
+
+.star2 {
+    top: -38%;
+    left: 80%;
+}
+
+.star3 {
+    top: -40%;
+    left: -30%;
+}
+
+.star4 {
+    top: -25%;
+    left: 35%;
+}
+
+.star5 {
+    top: 60%;
+    left: -22%;
+}
+
+.star6 {
+    top: 19%;
+    left: 97%
+}
+
+.star7 {
+    top: -10%;
+    left: 128%;
+}
+
+.star8 {
+    top: -21%;
+    left: -50%;
+}
+
+
+.congurates h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    
+    letter-spacing: 1rem;
+}
+
+.congurates p {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-top: -20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4.1px;
+}
+.congurates button{
+   
+    font-family: Roboto;
+    font-size: 15px;
+    width: 174px;
+    cursor: pointer;
+    height: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -85px;
+    border-radius: 20px;
+}
+.congurates button a{
+    text-decoration: none;
+    color: #6B6B6B;
+
+}
+.congurates {
+    text-align: center;
+
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="winnerscups">
+        <div class="cup">
+            <div class="cup-container">
+                <img src="./assests/Vector.png" alt="Winner's Cup" class="cup">
+                <img src="./assests//Star 1.png" alt="Big Star" class="star median-big star1">
+                <img src="./assests//Star 2.png" alt="Small Star" class="star median-big star2">
+                <img src="./assests//Star 3.png" alt="Small Star" class="star small-star star3">
+                <img src="./assests//Star 4.png" alt="Small Star" class="star small-star star4">
+                <img src="./assests//Star 5.png" alt="Small Star" class="star small-star star5">
+                <img src="./assests//Star 6.png" alt="Big Star" class="star big-star star6">
+                <img src="./assests//Star 7.png" alt="Small Star" class="star small-star star7">
+                <img src="./assests//Star 9.png" alt="Small Star" class="star small-big star8">
+
+
+            </div>
+            <div class="congurates">
+                <h1>HURRAY!!!</h1>
+                <p>YOU WON THE GAME</p>
+                <button class="winnerOnclick" onclick="clickAgainsss(event)"><a href="./index.html">PLAY AGAIN</a></button>
+            </div>
+            
+        </div>
+
+
+
+        <div class="game-rules" id="hiddenContent">
+            <div class="cross" onclick="hideContent()">X</div>
+            <h3>Game Rules</h3>
+            <div class="point-rules" >
+                <div class="line">
+                    <div class="point"></div>
+                    <p> Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper,
+                        scissors.”</p>
+
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>If both players lay down the same hand, each player lays down another hand</p>
+                </div>
+                
+
+            </div>
+
+
+        </div> 
+
+
+
+
+        <div class="rules newrules">
+            <button onclick="toggleContent()">RULES</button>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=id, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-box-one">
+            <div class="header-box">
+                <header class="header">
+                    <p class="header-logo">
+                        <span>
+                            ROCK
+                        </span>
+                        <span>
+                            PAPER
+                        </span>
+                        <span>
+                            SCISSORS
+                        </span>
+                    </p>
+                    <div class="scoreContent">
+                        <div class="computer_score">
+                            <p class="">COMPUTER SCORE</p>
+                            <p class="header__scoreNumber" id="computerScore"> </p>
+                        </div>
+                        <div class="computer_score">
+                            <p class="">YOUR <br> SCORE</p>
+                            <p class="header__scoreNumber" id="ourScore"> </p>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <section class="gamePlay">
+                <div class="upper-box">
+                    <button class="choice-one choice-btn" data-choice="paper" value="rock">
+                        <img src="./assests/rock.png" alt="Paper" />
+
+                    </button>
+                    <div class="horizontal-line">
+
+                    </div>
+                    <button class="choice-two choice-btn" data-choice="scissors" value="scissors">
+                        <img src="./assests/scissors.png" alt="Scissors" />
+                    </button>
+
+                </div>
+                <div class="first-line-crooked"></div>
+
+                <button class="choice-three choice-btn" data-choice="rock" value="paper">
+                    <img src="./assests/paper.png" alt="Rock" />
+                </button>
+                <div class="secondline-crooked">
+
+                </div>
+
+
+            </section>
+
+
+          
+            <section class="results hidden" id="winingResult">
+              
+            </section>
+
+
+
+        
+        </div> 
+        <div class="game-rules" id="hiddenContent">
+            <div class="cross" onclick="hideContent()">X</div>
+            <h3>Game Rules</h3>
+            <div class="point-rules">
+                <div class="line">
+                    <div class="point"></div>
+                    <p> Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock,
+                        paper,
+                        scissors.”</p>
+
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</p>
+                </div>
+                <div class="line">
+                    <div class="point"></div>
+                    <p>If both players lay down the same hand, each player lays down another hand</p>
+                </div>
+                
+
+            </div>
+
+
+        </div> 
+        
+
+       
+
+        <div class="rules">
+            <button onclick="toggleContent()">RULES</button>
+        </div>
+
+    </div>
+
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Overlapping Divs</title>
+    <style>
+        #div1, #div2 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        #div1 {
+            background-color: red;
+            top: 50px;
+            left: 50px;
+        }
+        #div2 {
+            background-color: blue;
+            top: 80px;
+            left: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script>
+        function areDivsOverlapping(div1, div2) {
+            var rect1 = div1.getBoundingClientRect();
+            var rect2 = div2.getBoundingClientRect();
+
+            return !(rect1.right < rect2.left ||
+                     rect1.left > rect2.right ||
+                     rect1.bottom < rect2.top ||
+                     rect1.top > rect2.bottom);
+        }
+
+        var div1 = document.getElementById('div1');
+        var div2 = document.getElementById('div2');
+
+        if (areDivsOverlapping(div1, div2)) {
+            console.log('Divs are overlapping!');
+        } else {
+            console.log('Divs are not overlapping.');
+        }
+    </script>
+
+</body>
+</html>

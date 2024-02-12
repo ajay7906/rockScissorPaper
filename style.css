@@ -45,7 +45,7 @@ body {
     margin-top: 30px;
     width: 90%;
     max-width: 600px;
-    height: 160px;
+   
     justify-content: space-between;
     align-items: center;
 
@@ -430,6 +430,11 @@ body {
 
     .container-box-one {
         width: 90%;
+    }
+    .header{
+        flex-direction: column;
+        padding-bottom: 15px;
+
     }
 
     .header-logo {

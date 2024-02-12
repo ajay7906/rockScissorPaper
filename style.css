@@ -458,6 +458,9 @@ body {
         justify-content: space-between;
         font-size: 15px;
     }
+    .rules{
+        bottom: -20px;
+    }
 
     .choice-three {
         width: 130px;
